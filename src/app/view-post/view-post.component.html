@@ -12,11 +12,11 @@
                             <th scope="col">Title</th>
                             <th scope="col">Body</th>
                           </tr>
-                          <tr>
-                            <td>1</td>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
+                          <tr *ngFor="let i of data">
+                            <td>{{i.userId}}</td>
+                            <td>{{i.id}}</td>
+                            <td>{{i.title}}</td>
+                            <td>{{i.body}}</td>
                           </tr>
                         </thead>
                       </table>
